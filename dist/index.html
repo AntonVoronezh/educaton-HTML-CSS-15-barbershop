@@ -207,35 +207,205 @@
                         </li>
                         <li class="news__item">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во
                             время стрижки.
+                            <p class="news__more">
+                                <a href="#" class="news__more-link">Читать всю новость</a>
+                            </p>
                         </li>
                         <li class="news__number">
                             <div class="block-vert">10 <br> окт</div>
                         </li>
                         <li class="news__item">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши
-                            стройные ряды. Спешите записаться!</li>
+                            стройные ряды. Спешите записаться!
+                            <p class="news__more">
+                                <a href="#" class="news__more-link">Читать всю новость</a>
+                            </p>
+                        </li>
                         <li class="news__number  news__number--tablets">
                             <div class="block-vert">12<br> нояб</div>
                         </li>
-                        <li class="news__item  news__item--tablets">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и
-                            узнаете, в чем здесь подвох!</li>
+                        <li class="news__item  news__item--tablets">Все дорожает, а наши стрижки нет! Как так?
+                            Приходите, постригитесь и
+                            узнаете, в чем здесь подвох!
+                            <p class="news__more">
+                                <a href="#" class="news__more-link">Читать всю новость</a>
+                            </p>
+                        </li>
                     </ul>
 
                 </div>
             </section>
-<section class="slider">
-    <div class="container container--slider">
-            <section class="title">
-                    <h2 class="visually-hidden">отзывы</h2>
-                    <div class="title__left">
-                        <h2 class="title-a  title--title">отзывы о нас</h2>
+            <section class="formin">
+                <div class="container container--formin">
+                    <section class="title">
+                        <h2 class="visually-hidden">записаться</h2>
+                        <div class="title__left">
+                            <h2 class="title-a  title--title">записаться на стрижку</h2>
+                        </div>
+                        <div class="title__right"><button class="btn  title__link">на главную</button></div>
+                    </section>
+                    <form action="#" class="form" method="POST">
+                        <div class="form__row  form__row--nsf">
+                            <input type="text" name="name" class="form__input" placeholder="Имя">
+                            <input type="text" name="surname" class="form__input" placeholder="Фамилия">
+                            <input type="text" name="family" class="form__input" placeholder="Отчество">
+                        </div>
+                        <div class="form__row  form__row--pm">
+                            <input type="tel" name="phone" class="form__input" placeholder="Контактнтый телефон">
+                            <input type="email" name="mail" class="form__input" placeholder="Контактнтый емайл">
+                        </div>
+                        <div class="form__row">
+                            <textarea name="text" class="form__textarea" placeholder="Информация для мастера"></textarea>
+                        </div>
+                        <fieldset class="beard">
+                            <legend class="beard__legend">
+                                выберите модель бороды
+                            </legend>
+                            <ul class="beard__list">
+                                <li class="beard__item">
+                                    <!-- <label>
+                                                <input class="checkbox" type="checkbox" name="checkbox-test"
+                                                    checked>
+                                                <span class="checkbox-custom"></span>
+                                                <span class="label">адмирал</span>
+                                            </label> -->
+                                    <label class="label">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label">адмирал</span>
+                                        <img src="img/decor/form/beard-1.svg" alt="борода" class="beard__img">
+                                    </label>
+
+
+                                </li>
+                                <li class="beard__item">
+                                    <label class="label">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label">лесоруб</span>
+                                        <img src="img/decor/form/beard-2.svg" alt="борода" class="beard__img">
+                                    </label>
+
+                                </li>
+                                <li class="beard__item">
+                                    <label class="label">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label">полярник</span>
+                                        <img src="img/decor/form/beard-3.svg" alt="борода" class="beard__img">
+                                    </label>
+
+
+                                </li>
+
+                                <li class="beard__item">
+                                    <label class="label">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label">боярин</span>
+                                        <img src="img/decor/form/beard-4.svg" alt="борода" class="beard__img">
+                                    </label>
+
+                                </li>
+                                <li class="beard__item">
+                                    <label class="label">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label">мудрец</span>
+                                        <img src="img/decor/form/beard-5.svg" alt="борода" class="beard__img">
+                                    </label>
+
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="dop">
+                            <legend class="dop__legend">
+                                дополнительные услуги
+                            </legend>
+                            <ul class="dop__list">
+                                <li class="dop__item">
+                                    <label class="label">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Подкрасить бороду</span>
+                                    </label>
+                                </li>
+                                <li class="dop__item">
+                                    <label class="label">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test" checked>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Причесать бороду</span>
+                                    </label>
+                                </li>
+                                <li class="dop__item">
+                                    <label class="label">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Убрать седину</span>
+                                    </label>
+                                </li>
+                                <li class="dop__item">
+                                    <label class="label">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Накрутить усы</span>
+                                    </label>
+                                </li>
+                                <li class="dop__item">
+                                    <label class="label">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Подровнять виски</span>
+                                    </label>
+                                </li>
+                                <li class="dop__item">
+                                    <label class="label">
+                                        <input class="checkbox" type="checkbox" name="checkbox-test" >
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Отполировать лысину</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button class="btn  title__link  btn--form">отправить заявку</button>
+                    </form>
+                </div>
+            </section>
+            <section class="slider">
+                <div class="container container--slider">
+                    <section class="title">
+                        <h2 class="visually-hidden">отзывы</h2>
+                        <div class="title__left">
+                            <h2 class="title-a  title--title">отзывы о нас</h2>
+                        </div>
+                        <div class="title__right"><button class="btn  title__link">оставить свой</button></div>
+                    </section>
+
+                    <div class="slider__list">
+                        <div class="slider__left">
+                            <img src="img/technical/slider/left-arrow.svg" alt="предыдущая" class="slider__pic">
+                        </div>
+                        <div class="slider__center">
+                            <img src="img/photo/slider/Layer 32.png" alt="фото" class="slider__img">
+                            <div class="slider__text">
+                                <p class="slider__title">Трэвис Баркер</p>
+                                <p clas"slider__info">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                    чтобы бо видно новую татуировку!</p>
+
+                            </div>
+                        </div>
+
+                        <div class="slider__right">
+                            <img src="img/technical/slider/right-arrow.svg" alt="следующая" class="slider__pic">
+                        </div>
+
                     </div>
-                    <div class="title__right"><button class="btn  title__link">оставить свой</button></div>
-                </section>
-    </div>
-    <div class="slider__list">
-        
-    </div>
-</section>
+                    <div class="slider__dots">
+                        <img src="img/technical/slider/current slider.png" alt="следующая" class="slider__indicator">
+                        <img src="img/technical/slider/slider indicator.png" alt="следующая" class="slider__indicator">
+                        <img src="img/technical/slider/slider indicator.png" alt="следующая" class="slider__indicator">
+                    </div>
+                </div>
+            </section>
             <section class="pricelist">
                 <div class="tr-items"></div>
                 <div class="container">
