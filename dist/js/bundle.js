@@ -48,7 +48,16 @@ function getCurrentTime() {
   }
 console.log(player.getPlayerState());
 
+function playPause() {
 
+    if (player.getPlayerState() !== 1) {
+        player.playVideo();
+        getVideoPlayPauseButton.style.opacity = '0';
+    } else {
+        player.pauseVideo();
+        getVideoPlayPauseButton.style.opacity = '0.5';
+    }
+};
 
 
 
