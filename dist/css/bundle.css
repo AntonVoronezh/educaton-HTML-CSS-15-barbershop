@@ -1535,6 +1535,52 @@ textarea {
   height: 11.25rem;
 }
 
+.control {
+  height: 3.125rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3e3e3e;
+  display: flex;
+}
+
+.control__img {
+  width: 3.125rem;
+  height: 3.125rem;
+  fill: #ccc;
+  cursor: pointer;
+}
+
+.control__img:hover {
+  fill: #ffffff;
+}
+
+.control__video-icon {
+  width: 50px;
+}
+
+.control__time {
+  flex: 4;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+
+.control__time-range {
+  width: 100%;
+}
+
+.control__sound-icon {
+  width: 3.125rem;
+}
+
+.control__sound {
+  flex: 1;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  margin-right: 0.3125rem;
+}
+
 @media (max-width: 768px) {
   html,
   body {
