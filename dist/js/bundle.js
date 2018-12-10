@@ -35,6 +35,18 @@ const getAudioPlayPauseButton = document.querySelector(".control__sound-icon");
 const getSoundRange = document.querySelector(".control__sound-range");
 
 
+getVideoPlayPauseButton.addEventListener('click', playPause);
+getcVideoIcon.addEventListener('click', playPause);
+getVideo.addEventListener('timeupdate', percentRange);
+getTimeRange.addEventListener('input', progressRange);
+
+getAudioPlayPauseButton.addEventListener('click', playAudio);
+getSoundRange.addEventListener('input', percentSound);
+function getCurrentTime() {
+    var currentTime = player.getCurrentTime();
+    return roundNumber(currentTime, 3);
+  }
+console.log(player.getPlayerState());
 
 
 
