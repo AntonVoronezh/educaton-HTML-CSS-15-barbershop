@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="стрижка, бритьё">
     <meta name="description" content="Барбершоп Бородинский">
-    <link rel="stylesheet" href="css/bundle.css">
+    <link rel="stylesheet" href="css/bundle.min.css">
     <title>Барбершоп Бородинский</title>
 </head>
 
@@ -234,8 +234,77 @@
 
                 </div>
             </section>
+            <section class="slider">
+                <div class="container container--slider">
+                    <section class="title">
+                        <h2 class="visually-hidden">отзывы</h2>
+                        <div class="title__left">
+                            <h2 class="title-a  title--title">отзывы о нас</h2>
+                        </div>
+                        <div class="title__right"><button class="btn  title__link">оставить свой</button></div>
+                    </section>
+                    <div class="slider__list">
+                        <div class="slider__left">
+                            <img src="img/technical/slider/left-arrow.svg" alt="предыдущая" class="slider__pic">
+                        </div>
+                        <div class="slider__center">
+                            <img src="img/photo/slider/Layer 32.png" alt="фото" class="slider__img">
+                            <div class="slider__text">
+                                <p class="slider__title">Трэвис Баркер</p>
+                                <p class="slider__info">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                    чтобы бо видно новую татуировку!</p>
+
+                            </div>
+                        </div>
+                        <div class="slider__right">
+                            <img src="img/technical/slider/right-arrow.svg" alt="следующая" class="slider__pic">
+                        </div>
+                    </div>
+                    <div class="slider__dots">
+                        <img src="img/technical/slider/current slider.png" alt="следующая" class="slider__indicator">
+                        <img src="img/technical/slider/slider indicator.png" alt="следующая" class="slider__indicator">
+                        <img src="img/technical/slider/slider indicator.png" alt="следующая" class="slider__indicator">
+                    </div>
+                </div>
+            </section>
+            <section class="videor">
+                <div class="container  container--videor">
+                   <h2 class="title-a  title--title  title--videor">видео о нас</h2>
+                    <div class="video">
+                        <div class="player">
+                            <!-- <video width="100%" height="100%" class="player__video" poster="img/technical/how/Slice_1.png">
+                                <source src="./img/video/1.mp4" type="video/mp4">
+                            </video> -->
+                             <div id="player" class="player__video"></div>
+                        </div>
+                        <div class="video__play-pause">
+                            <svg class="img  video__img">
+                                <use xlink:href="img/icons/sprite.svg#play"></use>
+                            </svg>
+                        </div>
+                        <div class="control">
+                            <div class="control__video-icon">
+                                <svg class="img  control__img">
+                                    <use xlink:href="img/icons/sprite.svg#play"></use>
+                                </svg>
+                            </div>
+                            <div class="control__time">
+                                <input type="range" class="control__time-range" min="0" max="100" value="0">
+                            </div>
+                            <div class="control__sound-icon">
+                                <svg class="img  control__img">
+                                    <use xlink:href="img/icons/sprite.svg#volume"></use>
+                                </svg>
+                            </div>
+                            <div class="control__sound">
+                                <input type="range" class="control__sound-range" min="0" max="100" value="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="formin">
-                <div class="container container--formin">
+                <div class="container  container--formin">
                     <section class="title">
                         <h2 class="visually-hidden">записаться</h2>
                         <div class="title__left">
@@ -262,20 +331,12 @@
                             </legend>
                             <ul class="beard__list">
                                 <li class="beard__item">
-                                    <!-- <label>
-                                                <input class="checkbox" type="checkbox" name="checkbox-test"
-                                                    checked>
-                                                <span class="checkbox-custom"></span>
-                                                <span class="label">адмирал</span>
-                                            </label> -->
                                     <label class="label">
                                         <input class="radio" type="radio" name="radio-test">
                                         <span class="radio-custom"></span>
                                         <span class="label">адмирал</span>
                                         <img src="img/decor/form/beard-1.svg" alt="борода" class="beard__img">
                                     </label>
-
-
                                 </li>
                                 <li class="beard__item">
                                     <label class="label">
@@ -324,7 +385,7 @@
                             <ul class="dop__list">
                                 <li class="dop__item">
                                     <label class="label">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test" >
+                                        <input class="checkbox" type="checkbox" name="checkbox-test">
                                         <span class="checkbox-custom"></span>
                                         <span class="label">Подкрасить бороду</span>
                                     </label>
@@ -338,28 +399,28 @@
                                 </li>
                                 <li class="dop__item">
                                     <label class="label">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test" >
+                                        <input class="checkbox" type="checkbox" name="checkbox-test">
                                         <span class="checkbox-custom"></span>
                                         <span class="label">Убрать седину</span>
                                     </label>
                                 </li>
                                 <li class="dop__item">
                                     <label class="label">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test" >
+                                        <input class="checkbox" type="checkbox" name="checkbox-test">
                                         <span class="checkbox-custom"></span>
                                         <span class="label">Накрутить усы</span>
                                     </label>
                                 </li>
                                 <li class="dop__item">
                                     <label class="label">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test" >
+                                        <input class="checkbox" type="checkbox" name="checkbox-test">
                                         <span class="checkbox-custom"></span>
                                         <span class="label">Подровнять виски</span>
                                     </label>
                                 </li>
                                 <li class="dop__item">
                                     <label class="label">
-                                        <input class="checkbox" type="checkbox" name="checkbox-test" >
+                                        <input class="checkbox" type="checkbox" name="checkbox-test">
                                         <span class="checkbox-custom"></span>
                                         <span class="label">Отполировать лысину</span>
                                     </label>
@@ -368,42 +429,6 @@
                         </fieldset>
                         <button class="btn  title__link  btn--form">отправить заявку</button>
                     </form>
-                </div>
-            </section>
-            <section class="slider">
-                <div class="container container--slider">
-                    <section class="title">
-                        <h2 class="visually-hidden">отзывы</h2>
-                        <div class="title__left">
-                            <h2 class="title-a  title--title">отзывы о нас</h2>
-                        </div>
-                        <div class="title__right"><button class="btn  title__link">оставить свой</button></div>
-                    </section>
-
-                    <div class="slider__list">
-                        <div class="slider__left">
-                            <img src="img/technical/slider/left-arrow.svg" alt="предыдущая" class="slider__pic">
-                        </div>
-                        <div class="slider__center">
-                            <img src="img/photo/slider/Layer 32.png" alt="фото" class="slider__img">
-                            <div class="slider__text">
-                                <p class="slider__title">Трэвис Баркер</p>
-                                <p clas"slider__info">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
-                                    чтобы бо видно новую татуировку!</p>
-
-                            </div>
-                        </div>
-
-                        <div class="slider__right">
-                            <img src="img/technical/slider/right-arrow.svg" alt="следующая" class="slider__pic">
-                        </div>
-
-                    </div>
-                    <div class="slider__dots">
-                        <img src="img/technical/slider/current slider.png" alt="следующая" class="slider__indicator">
-                        <img src="img/technical/slider/slider indicator.png" alt="следующая" class="slider__indicator">
-                        <img src="img/technical/slider/slider indicator.png" alt="следующая" class="slider__indicator">
-                    </div>
                 </div>
             </section>
             <section class="pricelist">
@@ -513,8 +538,8 @@
         </footer>
     </div>
 
-
-    <script src="js/bundle.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/bundle.min.js"></script>
 </body>
 
 </html>
