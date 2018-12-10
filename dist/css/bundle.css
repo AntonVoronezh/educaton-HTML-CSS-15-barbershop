@@ -1508,6 +1508,33 @@ textarea {
   padding-bottom: 3.125rem;
 }
 
+.video {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.875rem;
+  position: relative;
+  max-width: 40rem;
+  max-height: 22.5rem;
+  width: 100%;
+}
+
+.video__play-pause {
+  width: 9.375rem;
+  height: 9.375rem;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-40%, -45%) rotate(0deg);
+  fill: #ffffff;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.video__img {
+  width: 9.375rem;
+  height: 11.25rem;
+}
+
 @media (max-width: 768px) {
   html,
   body {
@@ -1660,6 +1687,11 @@ textarea {
 
   .dop__item {
     width: 50%;
+  }
+
+  .video {
+    width: 95vw;
+    height: auto;
   }
 }
 
