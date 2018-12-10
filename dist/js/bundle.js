@@ -27,6 +27,13 @@ function onYouTubeIframeAPIReady() {
     });
 }
 
+const getVideo = document.querySelector(".player__video");
+const getVideoPlayPauseButton = document.querySelector(".video__play-pause");
+const getcVideoIcon = document.querySelector(".control__video-icon");
+const getTimeRange = document.querySelector(".control__time-range");
+const getAudioPlayPauseButton = document.querySelector(".control__sound-icon");
+const getSoundRange = document.querySelector(".control__sound-range");
+
 
 
 
