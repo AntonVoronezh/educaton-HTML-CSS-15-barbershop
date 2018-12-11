@@ -106,6 +106,25 @@ var storage = localStorage.getItem("login");
 link[0].addEventListener("click", functionClick);
 link[1].addEventListener("click", functionClick);
 
+function functionClick (evt) {
+
+  evt.preventDefault();
+  popup.classList.add("modal-show");
+
+  if (storage) {
+    login.value = storage;
+    password.focus();
+  } else {
+    login.focus();
+  }
+};
+
+close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
+});
+
 
 const getNewsShowBtn = document.querySelector('.news-show');
 const getHideNewsLists = document.querySelectorAll('.news__list--bottom');
