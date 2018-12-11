@@ -216,6 +216,11 @@ function createOverlay(content) {
   }
 
 
+const getSliderBtnSubmit = document.querySelector('.slider--submit');
+const getSliderSubmitForm = document.querySelector('.slider-form');
+const getSliderSubmitBtn = document.querySelector('.slider-form__submit');
+const getSliderP = document.querySelector('.slider-form__out');
+
 
 const left = document.querySelector(".slider__left");
 const right = document.querySelector(".slider__right");
