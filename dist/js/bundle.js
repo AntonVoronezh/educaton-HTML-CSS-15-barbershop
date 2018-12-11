@@ -92,6 +92,20 @@ function openMobMenu() {
 
 
 
+var link = document.querySelectorAll(".user__link");
+
+var popup = document.querySelector(".modal-login");
+var close = popup.querySelector(".modal-close");
+
+var form = popup.querySelector("form");
+var login = popup.querySelector("[name=login]");
+var password = popup.querySelector("[name=password]");
+
+var storage = localStorage.getItem("login");
+
+link[0].addEventListener("click", functionClick);
+link[1].addEventListener("click", functionClick);
+
 
 const getNewsShowBtn = document.querySelector('.news-show');
 const getHideNewsLists = document.querySelectorAll('.news__list--bottom');
