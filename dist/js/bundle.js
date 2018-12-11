@@ -6,6 +6,8 @@ const getDopList = document.querySelector('.dop');
 const getAllDopItems = getDopList.querySelectorAll('.checkbox');
 
 
+getSubmitForm.addEventListener('click', createOffer);
+
 
 // // начало карты
 ymaps.ready(function () {
