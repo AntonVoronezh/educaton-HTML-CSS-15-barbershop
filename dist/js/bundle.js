@@ -1,3 +1,11 @@
+const getForm = document.querySelector('.form');
+const getSubmitForm = document.querySelector('.btn--form');
+const getBeardList = document.querySelector('.beard__list');
+const getAllBeardItems = getBeardList.querySelectorAll('.radio');
+const getDopList = document.querySelector('.dop');
+const getAllDopItems = getDopList.querySelectorAll('.checkbox');
+
+
 
 // // начало карты
 ymaps.ready(function () {
