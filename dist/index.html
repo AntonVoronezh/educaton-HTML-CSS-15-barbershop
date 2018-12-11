@@ -14,13 +14,13 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container  container--header">
+            <div class="container  container--header"  data-anchor="section-main" id="section-main">
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">главная</a> </li>
-                        <li class="nav__item"><a href="#" class="nav__link">наши работы</a> </li>
-                        <li class="nav__item"><a href="#" class="nav__link">записаться</a> </li>
-                        <li class="nav__item"><a href="#" class="nav__link">контакты</a> </li>
+                        <li class="nav__item"><a href="#section-main" class="nav__link">главная</a> </li>
+                        <li class="nav__item"><a href="#section-works" class="nav__link">наши работы</a> </li>
+                        <li class="nav__item"><a href="#section-formin" class="nav__link">записаться</a> </li>
+                        <li class="nav__item"><a href="#section-slider" class="nav__link">отзывы</a> </li>
                     </ul>
                 </nav>
                 <ul class="user">
@@ -55,7 +55,7 @@
                     </div>
                     <div class="title__right"><button class="btn  title__link"> на главную</button></div>
                 </section>
-                <section class="works">
+                <section class="works" data-anchor="section-works" id="section-works">
                     <div class="works__left">
                         <!-- <img src="img/photo/desktop/photo-1-desktop@1.png" alt="фото"
                             srcset="img/photo/desktop/photo-1-desktop@1.png 1x,
@@ -169,7 +169,7 @@
                     </section>
                 </section>
             </div>
-            <section class="properties">
+            <section class="properties"   data-anchor="section-properties">
                 <div class="container  container--properties">
                     <h2 class="title-a  title--title  title--pricelist">наши преимущества</h2>
                     <ul class="properties__list">
@@ -192,68 +192,223 @@
                     </ul>
                 </div>
             </section>
-            <section class="news">
+            <section class="news"  data-anchor="section-news">
                 <div class="container  container--news">
                     <section class="title">
                         <h2 class="visually-hidden">Новости и акции</h2>
                         <div class="title__left">
                             <h2 class="title-a  title--title">Новости и акции</h2>
                         </div>
-                        <div class="title__right"><button class="btn  title__link"> показать все</button></div>
+                        <div class="title__right"><button class="btn  title__link  news-show"> показать все</button></div>
                     </section>
-                    <ul class="news__list">
-                        <li class="news__number">
-                            <div class="block-vert">29 <br> сент</div>
-                        </li>
-                        <li class="news__item">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во
-                            время стрижки.
-                            <p class="news__more">
-                                <a href="#" class="news__more-link">Читать всю новость</a>
-                            </p>
-                        </li>
-                        <li class="news__number">
-                            <div class="block-vert">10 <br> окт</div>
-                        </li>
-                        <li class="news__item">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши
-                            стройные ряды. Спешите записаться!
-                            <p class="news__more">
-                                <a href="#" class="news__more-link">Читать всю новость</a>
-                            </p>
-                        </li>
-                        <li class="news__number  news__number--tablets">
-                            <div class="block-vert">12<br> нояб</div>
-                        </li>
-                        <li class="news__item  news__item--tablets">Все дорожает, а наши стрижки нет! Как так?
-                            Приходите, постригитесь и
-                            узнаете, в чем здесь подвох!
-                            <p class="news__more">
-                                <a href="#" class="news__more-link">Читать всю новость</a>
-                            </p>
-                        </li>
-                    </ul>
+                    <div class="news__wrap">
+                        <ul class="news__list">
+                            <li class="news__number">
+                                <div class="block-vert">29 <br> сент</div>
+                            </li>
+                            <li class="news__item">
 
+                                Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во
+                                время стрижки.
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                            <li class="news__number">
+                                <div class="block-vert">10 <br> окт</div>
+                            </li>
+                            <li class="news__item">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши
+                                стройные ряды. Спешите записаться!
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                            <li class="news__number  news__number--tablets">
+                                <div class="block-vert">20<br> окт</div>
+                            </li>
+                            <li class="news__item  news__item--tablets">Все дорожает, а наши стрижки нет! Как так?
+                                Приходите, постригитесь и
+                                узнаете, в чем здесь подвох!
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                        </ul>
+                        <!--  -->
+                        <ul class="news__list  news__list--bottom  news__list--hide">
+                            <li class="news__number">
+                                <div class="block-vert">29 <br> окт</div>
+                            </li>
+                            <li class="news__item">
+
+                                Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во
+                                время стрижки.
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                            <li class="news__number">
+                                <div class="block-vert">3 <br> нояб</div>
+                            </li>
+                            <li class="news__item">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши
+                                стройные ряды. Спешите записаться!
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                            <li class="news__number  news__number--tablets">
+                                <div class="block-vert">12<br> нояб</div>
+                            </li>
+                            <li class="news__item  news__item--tablets">Все дорожает, а наши стрижки нет! Как так?
+                                Приходите, постригитесь и
+                                узнаете, в чем здесь подвох!
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                        </ul>
+                        <!--  -->
+                        <ul class="news__list  news__list--bottom  news__list--hide">
+                            <li class="news__number">
+                                <div class="block-vert">17 <br> нояб</div>
+                            </li>
+                            <li class="news__item">
+
+                                Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во
+                                время стрижки.
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                            <li class="news__number">
+                                <div class="block-vert">29 <br> нояб</div>
+                            </li>
+                            <li class="news__item">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши
+                                стройные ряды. Спешите записаться!
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                            <li class="news__number  news__number--tablets">
+                                <div class="block-vert">6<br> дек</div>
+                            </li>
+                            <li class="news__item  news__item--tablets">Все дорожает, а наши стрижки нет! Как так?
+                                Приходите, постригитесь и
+                                узнаете, в чем здесь подвох!
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                        </ul>
+                        <!--  -->
+                        <ul class="news__list  news__list--bottom  news__list--hide">
+                            <li class="news__number">
+                                <div class="block-vert">17 <br> дек</div>
+                            </li>
+                            <li class="news__item">
+
+                                Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во
+                                время стрижки.
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                            <li class="news__number">
+                                <div class="block-vert">23 <br> дек</div>
+                            </li>
+                            <li class="news__item">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши
+                                стройные ряды. Спешите записаться!
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                            <li class="news__number  news__number--tablets">
+                                <div class="block-vert">30<br> дек</div>
+                            </li>
+                            <li class="news__item  news__item--tablets">Все дорожает, а наши стрижки нет! Как так?
+                                Приходите, постригитесь и
+                                узнаете, в чем здесь подвох!
+                                <p class="news__more">
+                                    <a href="#" class="news__more-link">Читать всю новость</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
-            <section class="slider">
+            <section class="slider"  data-anchor="section-slider">
+                    <a href="#section-slider" id="section-slider"></a>
                 <div class="container container--slider">
                     <section class="title">
                         <h2 class="visually-hidden">отзывы</h2>
                         <div class="title__left">
                             <h2 class="title-a  title--title">отзывы о нас</h2>
                         </div>
-                        <div class="title__right"><button class="btn  title__link">оставить свой</button></div>
+                        <div class="title__right"><button class="btn  title__link  slider--submit">оставить свой</button></div>
                     </section>
+                    <form class="slider-form">
+                        <div class="slider-form__top">
+                            <!-- <input type="file" name="avatar"  class="slider-form__avatar"> -->
+                            <div class="file-upload">
+                                <label>
+                                    <input type="file" name="avatar">
+                                    <span>Аватарка</span>
+                                </label>
+                            </div>
+                            <input type="text" name="firstname" class="slider-form__firstname" placeholder="Имя">
+                            <input type="text" name="lastname" class="slider-form__lastname" placeholder="Фамилия">
+                        </div>
+                        <textarea name="comment" class="slider-form__comment" placeholder="Ваши 5 копеек..."></textarea>
+                        <button class="btn  title__link  slider-form__submit">добавить</button>
+                        <p class="slider-form__out"></p>
+                    </form>
+
                     <div class="slider__list">
                         <div class="slider__left">
                             <img src="img/technical/slider/left-arrow.svg" alt="предыдущая" class="slider__pic">
                         </div>
                         <div class="slider__center">
-                            <img src="img/photo/slider/Layer 32.png" alt="фото" class="slider__img">
-                            <div class="slider__text">
-                                <p class="slider__title">Трэвис Баркер</p>
-                                <p class="slider__info">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
-                                    чтобы бо видно новую татуировку!</p>
-
+                            <div class="slider-slider">
+                                <div class="elems" id="items">
+                                    <div class="elem">
+                                        <img src="img/photo/slider/Layer 32.png" alt="фото" class="slider__img">
+                                        <div class="slider__text">
+                                            <p class="slider__title">Трэвис Баркер</p>
+                                            <p class="slider__info">Спасибо за лысину! Был проездом в Москве, заскочил
+                                                побриться,
+                                                чтобы бо видно новую татуировку!</p>
+                                        </div>
+                                    </div>
+                                    <div class="elem">
+                                        <img src="img/photo/slider/images2.jpg" alt="фото" class="slider__img">
+                                        <div class="slider__text">
+                                            <p class="slider__title">Голый Васер</p>
+                                            <p class="slider__info">Теперь и на природу с друзьями не страшно...</p>
+                                        </div>
+                                    </div>
+                                    <div class="elem">
+                                        <img src="img/photo/slider/images3.jpg" alt="фото" class="slider__img">
+                                        <div class="slider__text">
+                                            <p class="slider__title">Серней Васильев</p>
+                                            <p class="slider__info">Всё по высшему разряду. Рекомендую.</p>
+                                        </div>
+                                    </div>
+                                    <div class="elem">
+                                        <img src="img/photo/slider/images4.jpg" alt="фото" class="slider__img">
+                                        <div class="slider__text">
+                                            <p class="slider__title">Кончита Вурст</p>
+                                            <p class="slider__info">Скоро... Очень скоро и я тсну клиентом!!!</p>
+                                        </div>
+                                    </div>
+                                    <div class="elem">
+                                        <img src="img/photo/slider/images5.jpg" alt="фото" class="slider__img">
+                                        <div class="slider__text">
+                                            <p class="slider__title">Мистер Уайлд</p>
+                                            <p class="slider__info">Мне не только налили выпить идали яблоко, но и
+                                                причесали бороду.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="slider__right">
@@ -261,21 +416,23 @@
                         </div>
                     </div>
                     <div class="slider__dots">
-                        <img src="img/technical/slider/current slider.png" alt="следующая" class="slider__indicator">
-                        <img src="img/technical/slider/slider indicator.png" alt="следующая" class="slider__indicator">
-                        <img src="img/technical/slider/slider indicator.png" alt="следующая" class="slider__indicator">
+                        <div class="slider__dots-item  slider__dots-item--active"></div>
+                        <div class="slider__dots-item"></div>
+                        <div class="slider__dots-item"></div>
+                        <div class="slider__dots-item"></div>
+                        <div class="slider__dots-item"></div>
                     </div>
                 </div>
             </section>
-            <section class="videor">
+            <section class="videor"  data-anchor="section-videor">
                 <div class="container  container--videor">
-                   <h2 class="title-a  title--title  title--videor">видео о нас</h2>
+                    <h2 class="title-a  title--title  title--videor">видео о нас</h2>
                     <div class="video">
                         <div class="player">
                             <!-- <video width="100%" height="100%" class="player__video" poster="img/technical/how/Slice_1.png">
                                 <source src="./img/video/1.mp4" type="video/mp4">
                             </video> -->
-                             <div id="player" class="player__video"></div>
+                            <div id="player" class="player__video"></div>
                         </div>
                         <div class="video__play-pause">
                             <svg class="img  video__img">
@@ -303,7 +460,7 @@
                     </div>
                 </div>
             </section>
-            <section class="formin">
+            <section class="formin"  data-anchor="section-formin" id="section-formin">
                 <div class="container  container--formin">
                     <section class="title">
                         <h2 class="visually-hidden">записаться</h2>
@@ -431,7 +588,7 @@
                     </form>
                 </div>
             </section>
-            <section class="pricelist">
+            <section class="pricelist"  data-anchor="section-pricelist" id="section-pricelist">
                 <div class="tr-items"></div>
                 <div class="container">
                     <div class="pricelist__title">
@@ -507,8 +664,8 @@
             </section>
             <section class="map">
                 <div class="container container--footer">
-                        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full" type="text/javascript"></script>
-                        <div class="map__wrap" id="map"></div>
+                    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full" type="text/javascript"></script>
+                    <div class="map__wrap" id="map"></div>
                 </div>
             </section>
         </main>
@@ -543,7 +700,55 @@
             </div>
         </footer>
     </div>
+    <div class="mob-menu  mob-menu-hide">
+              <div class="mob-menu__wrap">
+        <ul class="mob-menu__list">
+            <li class="mob-menu__item ">
+                <picture>
+                        <a href="#" class="mob-menu__link"><img src="img/logo/logotype-mobile.svg" alt="лого"></a>
+                </picture>
+            </li>
+            <li class="mob-menu__item"><a href="#section-main" class="mob-menu__link">главная</a></li>
+            <li class="mob-menu__item"><a href="#section-works" class="mob-menu__link">наши работы</a></li>
+            <li class="mob-menu__item"><a href="#section-formin" class="mob-menu__link">записаться</a></li>
+            <li class="mob-menu__item"><a href="#section-pricelist" class="mob-menu__link">контакты</a></li>
+            <li class="mob-menu__item"><a href="#section-slider" class="mob-menu__link">отзывы</a></li>
+            <li class="mob-menu__item"><a href="#" class="mob-menu__link  user__link">вход</a></li>
+        </ul>
+            </div>
 
+    </div>
+    <section class="modal modal-login">
+            <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+            <p class="modal-description">ВВедите пожалуйста свой логин и пароль</p>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label class="visually-hidden" for="user-login">логин</label>
+                    <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="логин">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="user-password">пароль</label>
+                    <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="пароль">
+                </p>
+                <p class="login-help">
+                    <label class="login-checkbox">
+                        <input type="checkbox" name="remember" class="visually-hidden">
+                        <span class="checkbox-indicator"></span>
+                        ЗАПОМНИТЕ МЕНЯ
+                    </label>
+                    <a class="restore" href="#">я забыл пароль!</a>
+                </p>
+                <button class="button" type="submit">войти</button>
+            </form>
+            <button class="modal-close" type="button">закрыть</button>
+    
+        </section>
+    <script type="template" id="overlayTemplate">
+            <div class="container2">
+                  <img src="./img/technical/modalClose.png" class="close">
+              <div class="content"></div>
+            </div>
+        </script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/bundle.min.js"></script>
 </body>
