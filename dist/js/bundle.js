@@ -230,7 +230,18 @@ function createSubmitForm() {
 
 getSliderSubmitBtn.addEventListener('click', createNewComment);
 
+function createNewComment(event) {
+    event.preventDefault();
+    const text =
+        `Ваше фото <b>${getSliderSubmitForm.avatar.value}</b>, <br>
+    ваше имя - <b>${getSliderSubmitForm.firstname.value}</b>, <br>
+    ваша фамилия - <b>${getSliderSubmitForm.lastname.value}</b> <br>
+    и ваш комментарий <b>"${getSliderSubmitForm.comment.value}"</b> <br><br>
+    <span>будут сохранены и опубликованы</span>`
+    // console.log(text);
+    getSliderP.innerHTML = text;
 
+};
 const left = document.querySelector(".slider__left");
 const right = document.querySelector(".slider__right");
 const items = document.querySelector("#items");
