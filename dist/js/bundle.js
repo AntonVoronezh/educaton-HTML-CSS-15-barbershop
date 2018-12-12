@@ -5,7 +5,6 @@ const getAllBeardItems = getBeardList.querySelectorAll('.radio');
 const getDopList = document.querySelector('.dop');
 const getAllDopItems = getDopList.querySelectorAll('.checkbox');
 
-
 getSubmitForm.addEventListener('click', createOffer);
 
 function createOffer(event) {
@@ -135,7 +134,7 @@ form.addEventListener("submit", function (evt) {
   } else {
     localStorage.setItem("login", login.value);
   }
-  console.log(login.value, password.value);
+  // console.log(login.value, password.value);
 
   const successOverlay3 = createOverlay(`Вот тут ваши данные (${login.value}:${password.value}) будут куда-то отправлены`);
   document.body.appendChild(successOverlay3);
