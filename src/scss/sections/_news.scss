@@ -1,0 +1,125 @@
+.news {
+    padding-bottom: rem(30px);
+    &__wrap {
+        border: 1px solid $brown;
+    }
+    &__list {
+        display: flex;
+        padding: 10px;
+        transition: height 0.5s, opacity 0.5s;
+        &--hide {
+            height: 0;
+            opacity: 0;
+        }
+        &--show {
+            height: 100%;
+            opacity: 1;
+        }
+        //    flex-wrap: wrap;
+        @include phones {
+            flex-wrap: wrap;
+        }
+    }
+    &__number {
+        position: relative;
+        width: rem(140px);
+        min-height: rem(100px); //    
+        overflow: hidden;
+        @include phones {
+            width: 20%;
+        }
+    }
+    &__item {
+        padding-left: 10px;
+        font-size: rem(19px);
+        @include phones {
+            width: 69%;
+        }
+    }
+    &__more {
+        margin-top: rem(10px);
+    }
+    &__more-link {
+        color: $brown;
+    }
+}
+
+.block-vert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $black;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: rem(23px);
+    text-align: center;
+    color: $white;
+    padding: 0;
+    @include phones {
+        width: 40%;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        margin-top: 10px;
+        transform: rotate(90deg);
+        border: rem(28px) solid $body;
+        border-left-color: $black;
+        @include phones {
+            border: rem(20px) solid $body;
+        }
+    }
+}
+
+.news__number--tablets,
+.news__item--tablets {
+    @include tablets {
+        display: none;
+    }
+}
+
+// ddddddddddddddd
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(#000000, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.container2 {
+    position: relative;
+}
+
+.content {
+    width: rem(400px);
+    background: $white;
+    border-radius: rem(5px);
+    padding: rem(10px);
+    color: $black;
+    font-size: rem(14px);
+    margin: 0;
+    border-radius: rem(5px);
+    @include phones {
+        width: 80vw;
+    }
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    right: rem(3px);
+    top: rem(3px);
+}
+
+.comment__title--overlay {
+    font-size: rem(20px);
+    margin-bottom: rem(10px);
+}

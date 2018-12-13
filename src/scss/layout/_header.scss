@@ -1,0 +1,83 @@
+.container--header {
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include phones {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    &__item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: rem(20px);
+        text-transform: uppercase; // transition: border-bottom 0.5s;
+        &:hover {
+            border-bottom: rem(4px) solid $brown;
+            margin-top: rem(4px);
+            cursor: pointer;
+        }
+    }
+    &__link {
+        // border: 1px solid #ffffff;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.user {
+    // border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    @include phones {
+        display: none;
+    }
+    &::before {
+        content: "";
+        width: rem(20px);
+        height: rem(40px);
+        margin-right: rem(10px);
+        background-image: url('../img/technical/header/login.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+.mobile-menu {
+    height: rem(70px);
+    background-color: $brown;
+    position: absolute;
+    top: rem(70px);
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__img {
+      margin-right: rem(20px); 
+      cursor: pointer;
+      &--left {
+          opacity: 0;
+      } 
+    }
+    &__text {
+            text-transform: uppercase;
+    font-size: rem(30px);
+    text-align: center;
+    // border: 1px solid #000000;
+    flex:1;
+    }
+}

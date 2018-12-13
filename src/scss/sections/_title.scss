@@ -1,0 +1,25 @@
+.title--title {
+    font-size: 2.4rem;
+    text-transform: uppercase; // border: 1px solid red;
+}
+
+.title {
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include phones {
+        margin-top: rem(50px);
+    }
+    &__left {}
+    &__right {
+        color: $black;
+    }
+    &__link {
+        border: 1px solid $brown;
+        padding: rem(10px) rem(20px);
+        color: $black;
+        text-transform: uppercase;
+    }
+}

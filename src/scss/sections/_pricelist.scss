@@ -1,0 +1,116 @@
+.pricelist {
+    position: relative;
+    color: $white;
+    background-color: $grey;
+    font-size: 1.2rem;
+    padding-bottom: rem(50px);
+    &__wrap {
+        // border: 1px solid #fff;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+    &__list {
+        display: table;
+        @include tablets {
+            width: 100%;
+        }
+        @include phones {
+            display: none;
+        }
+        &-mobile {
+            display: none;
+            @include phones {
+                display: block;
+                border: 1px solid $brown;
+                padding: rem(5px);
+            }
+        }
+    }
+    &__item {
+        display: table-row;
+        &-mobile {
+            display: flex;
+            width: 100%;
+            justify-content: space-between; // border: 1px solid #fff;
+            font-size: 1.4rem;
+            margin-bottom: rem(15px);
+        }
+    }
+    &__elem {
+        display: table-cell;
+        vertical-align: middle;
+        padding: rem(10px);
+        padding-left: rem(20px);
+        padding-right: rem(20px);
+        border: 1px solid $brown;
+    }
+    &__clock {
+        border: 1px solid $brown;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: stretch;
+        @include tablets {
+            width: 100%;
+            margin-top: rem(10px);
+            flex-direction: row;
+        }
+    }
+    &__clock-top {
+        // border: 1px solid #fff;
+        width: 100%;
+        height: 80%;
+        background-image: url('../img/decor/pricelist/clock illustration.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        @include tablets {
+            width: 40%;
+            height: 120px;
+            background-size: auto 100px;
+        }
+    }
+    &__clock-bottom {
+        text-align: center;
+        padding-bottom: rem(10px);
+        padding-top: rem(10px);
+        @include tablets {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: 2rem;
+        }
+    }
+}
+
+.title--pricelist {
+    padding-top: rem(80px);
+    padding-bottom: rem(50px);
+    color: $white;
+    @include phones {
+        padding-top: rem(110px);
+        text-align: center;
+    }
+}
+
+.tr-items {
+    position: absolute;
+    width: 0;
+    top: 0; // left: 0;
+    right: 0;
+    height: rem(80px);
+    border: rem(80px) solid;
+    border-color: $body $grey yellow $grey; // border-color: transparent yellow yellow yellow;
+    border-left-width: 50vw;
+    border-right-width: 50vw; // border-top-width: 0;
+    border-bottom-width: 0; 
+    display: none;
+    @include tablets {
+        display: block;
+    }
+}

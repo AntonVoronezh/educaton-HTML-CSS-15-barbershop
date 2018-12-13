@@ -1,0 +1,118 @@
+.footer {
+    position: relative;
+}
+
+.container--footer {
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+    display: flex;
+    justify-content: space-between;
+    @include tablets {
+        flex-wrap: wrap;
+    }
+    @include phones {
+        padding-top: rem(100px);
+        min-height: 300px;
+        font-size: 1.3rem;
+    }
+}
+
+.address {
+    &__title {
+        text-transform: uppercase;
+        color: $white;
+        font-style: normal;
+        @include phones {
+            text-align: center;
+        }
+    }
+    &__text {
+        margin-top: rem(10px); // text-transform: uppercase;
+        color: $white;
+        font-style: normal;
+        @include phones {
+            text-align: center;
+        }
+    }
+    @include tablets {
+        width: 50%;
+    }
+    @include phones {
+        width: 100%;
+    }
+}
+
+.signature {
+    color: $white;
+    @include tablets {
+        width: 50%;
+        text-align: right;
+    }
+    @include phones {
+        margin-top: rem(15px);
+        order: 5;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.social {
+    &__list {
+        display: flex;
+        @include tablets {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__item {
+        width: rem(50px);
+        height: rem(50px);
+        @include tablets {
+            width: 30%;
+            min-width: rem(50px);
+        }
+        margin-right: rem(10px);
+        background-position: center center;
+        background-repeat: no-repeat;
+        &--f {
+            background-image: url('../img/icons/facebook-icon-small.png');
+        }
+        &--i {
+            background-image: url('../img/icons/insta-icon-small.png');
+        }
+        &--v {
+            background-image: url('../img/icons/vk-icon-small.png');
+        }
+    }
+    &__link {
+        display: block;
+        border: 1px solid $grey;
+        width: 100%;
+        height: 100%;
+    }
+    @include tablets {
+        order: 10;
+        margin-top: rem(15px);
+        flex-grow: 1; // border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.tr-footer {
+    position: absolute;
+    width: 0; // height: 0;
+    top: 0; // left: 0;
+    right: 0;
+    height: rem(80px);
+    border: rem(80px) solid;
+    border-color: $grey $black yellow $black; // border-color: transparent yellow yellow yellow;
+    border-left-width: 50vw;
+    border-right-width: 50vw; // border-top-width: 0;
+    border-bottom-width: 0;
+    display: none;
+    @include phones {
+        display: block; // min-height: rem(250px);
+    }
+}

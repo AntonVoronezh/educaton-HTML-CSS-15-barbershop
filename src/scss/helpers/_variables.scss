@@ -1,0 +1,27 @@
+// size
+$view-port: 1024px;
+$nav-height: 90px;
+//breackpoints
+$tablets:768px;
+$phones:480px;
+// fonts
+$main-font:'ptsansnarrow',
+sans-serif;
+// colors
+$brown: #826550;
+$black: #121212;
+$grey:#292929;
+$body: #f8f5f2;
+$white: #ffffff;
+//variables of colors tag a
+$a-color: $white;
+$a-color-hover: $brown;
+$a-color-visited: darken($a-color, 20%);
+$a-color-focus: $body;
+$a-color-active: $body;
+//variables of colors class btn
+$btn-background-color: $body;
+$btn-background-color-hover: darken($btn-background-color, 20%);
+$btn-background-color-visited: $brown;
+$btn-background-color-focus: $brown;
+$btn-background-color-active: darken($btn-background-color, 10%);

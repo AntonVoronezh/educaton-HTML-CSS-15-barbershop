@@ -1,0 +1,80 @@
+.container--properties {
+    
+}
+
+.properties {
+    color: $white;
+    background-color: $grey;
+    font-size: 1.2rem; // border-bottom: 1px solid #fff;
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include tablets {
+            flex-direction: column;
+        }
+        @include phones {
+            padding-top: rem(20px);
+            padding-bottom: rem(20px);
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__item {
+        width: 25%;
+        @include tablets {
+            display: flex; // flex-direction: row;
+            width: 100%;
+            margin-right: rem(20px);
+            align-items: center;
+        } // border: 1px solid #fff;
+        @include phones {
+            flex-direction: column;
+            width: 75%;
+            margin-bottom: rem(20px);
+        }
+    }
+    &__title {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: rem(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        @include tablets {
+            flex-direction: row;
+            margin-right: rem(20px);
+        }
+        @include phones {
+            flex-direction: column;
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: rem(100px);
+            height: rem(100px);
+            @include phones {
+                width: rem(130px);
+                height: rem(130px);
+            }
+            margin-bottom: rem(10px);
+            background-position: center center;
+            background-repeat: no-repeat; // border: 1px solid #fff;
+            @include tablets {
+                margin-right: rem(20px);
+            }
+        }
+        &--a1i::before {
+            background-image: url('../img/decor/properties/advantage-1-illustration.svg');
+        }
+        &--a2i::before {
+            background-image: url('../img/decor/properties/advantage-2-illustration.svg');
+        }
+        &--a3i::before {
+            background-image: url('../img/decor/properties/advantage-3-illustration.svg');
+        }
+    }
+}

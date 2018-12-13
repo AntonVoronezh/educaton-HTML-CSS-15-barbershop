@@ -1,0 +1,37 @@
+.wrapper {
+    min-height: 100%;
+    background-color: $body;
+}
+
+.container {
+    max-width: rem(1024px);
+    width: 95%;
+    @include tablets {
+        width: 95%;
+    }
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    min-height: rem(70px);
+    background-color: $black;
+    display: flex;
+}
+
+.main {
+
+}
+
+.footer {
+    min-height: rem(150px);
+    background-color: $black;
+}
+
+.logo {}
+
+.title {}
+
+.works {}
+
+.pricelist {}

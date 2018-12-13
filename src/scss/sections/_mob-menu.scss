@@ -1,0 +1,44 @@
+.mob-menu {
+    height: 100Vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: $brown;
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        margin-top: 2px;
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        padding: rem(10px);
+        color: $white;
+        text-transform: uppercase;
+        background-color: #826550;
+        box-shadow: 0 1px 0 #71543f, inset 0 1px 0 #886e5b;
+        &:hover {
+            margin-top: 0;
+        }
+    }
+    &__wrap {
+        width: 90%;
+        margin-top: rem(50px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__link {
+        width: 100%;
+        text-align: center;
+        &:hover {
+            color: darken($brown, 20); // border: 1px solid #000000;
+        }
+    }
+}
+
+.mob-menu-hide {
+    display: none;
+}

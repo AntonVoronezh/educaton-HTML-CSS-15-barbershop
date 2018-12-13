@@ -1,0 +1,46 @@
+.logo {
+    position: relative;
+    @include tablets {
+        height: rem(250px);
+    }
+    @include phones {
+        height: rem(70px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    height: rem(350px);
+    background-image: url('../img/decor/header/tint.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    &::after {
+        content: "";
+    }
+}
+
+.container--logo {
+    height: 100%;
+    // border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tr {
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    // left: 0;
+    right: 0;
+    height: rem(80px);
+    border: rem(80px) solid;
+    border-color: transparent $body yellow $body;
+    // border-color: transparent yellow yellow yellow;
+    border-left-width: 50vw ;
+    border-right-width: 50vw; // border-top-width: 0;
+    border-bottom-width: 0;
+    @include phones {
+        display: none;
+    }
+}
